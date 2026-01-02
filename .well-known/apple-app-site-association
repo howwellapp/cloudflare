@@ -1,0 +1,16 @@
+  {
+    "applinks": {
+      "apps": [],
+      "details": [
+        {
+          "appIDs": ["6TPR8G3LB6.com.howwellapp.howwellapp"],
+          "components": [
+            {
+              "/": "/auth/*",
+              "comment": "Supabase auth callbacks"
+            }
+          ]
+        }
+      ]
+    }
+  }
