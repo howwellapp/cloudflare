@@ -1,0 +1,19 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Opening How Well Do You Know Me?</title>
+    <script>
+      // Get the hash fragment with tokens
+      const hash = window.location.hash;
+      // Redirect to app using custom scheme
+      window.location.href = 'howwellapp://auth/callback' + hash;
+    </script>
+  </head>
+  <body>
+    <p>Opening app...</p>
+    <p>If the app doesn't open, <a id="manual-link">tap here</a></p>
+    <script>
+      document.getElementById('manual-link').href = 'howwellapp://auth/callback' + window.location.hash;
+    </script>
+  </body>
+  </html>
